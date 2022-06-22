@@ -8,3 +8,6 @@ class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         nums.sort(reverse = True)
         return nums[k-1]
+
+        # Solution 2
+        return sorted(nums)[-k]
